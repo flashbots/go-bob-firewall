@@ -4,8 +4,8 @@ package database
 import (
 	"os"
 
-	"github.com/flashbots/go-template/database/migrations"
-	"github.com/flashbots/go-template/database/vars"
+	"github.com/flashbots/go-bob-firewall/database/migrations"
+	"github.com/flashbots/go-bob-firewall/database/vars"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 	migrate "github.com/rubenv/sql-migrate"

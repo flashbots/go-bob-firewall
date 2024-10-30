@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/flashbots/go-template/common"
-	"github.com/flashbots/go-template/httpserver"
+	"github.com/flashbots/go-bob-firewall/common"
+	"github.com/flashbots/go-bob-firewall/httpserver"
 	"github.com/google/uuid"
 	"github.com/urfave/cli/v2" // imports as package "cli"
 )
@@ -63,12 +63,10 @@ func main() {
 		Flags: flags,
 		Action: func(cCtx *cli.Context) error {
 			listenAddr := cCtx.String("listen-addr")
-			metricsAddr := cCtx.String("metrics-addr")
 			logJSON := cCtx.Bool("log-json")
 			logDebug := cCtx.Bool("log-debug")
 			logUID := cCtx.Bool("log-uid")
 			logService := cCtx.String("log-service")
-			enablePprof := cCtx.Bool("pprof")
 			drainDuration := time.Duration(cCtx.Int64("drain-seconds")) * time.Second
 
 			log := common.SetupLogger(&common.LoggingOpts{
@@ -84,10 +82,8 @@ func main() {
 			}
 
 			cfg := &httpserver.HTTPServerConfig{
-				ListenAddr:  listenAddr,
-				MetricsAddr: metricsAddr,
-				Log:         log,
-				EnablePprof: enablePprof,
+				ListenAddr: listenAddr,
+				Log:        log,
 
 				DrainDuration:            drainDuration,
 				GracefulShutdownDuration: 30 * time.Second,

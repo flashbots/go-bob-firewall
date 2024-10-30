@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/flashbots/go-template/common"
-	"github.com/flashbots/go-template/database/migrations"
-	"github.com/flashbots/go-template/database/vars"
+	"github.com/flashbots/go-bob-firewall/common"
+	"github.com/flashbots/go-bob-firewall/database/migrations"
+	"github.com/flashbots/go-bob-firewall/database/vars"
 	"github.com/jmoiron/sqlx"
 	"github.com/stretchr/testify/require"
 )

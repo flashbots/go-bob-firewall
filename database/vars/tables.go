@@ -1,7 +1,7 @@
 // Package vars contains the database variables such as dynamic table names
 package vars
 
-import "github.com/flashbots/go-template/common"
+import "github.com/flashbots/go-bob-firewall/common"
 
 var (
 	tablePrefix = common.GetEnv("DB_TABLE_PREFIX", "dev")

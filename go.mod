@@ -1,4 +1,4 @@
-module github.com/flashbots/go-template
+module github.com/flashbots/go-bob-firewall
 
 go 1.22
 

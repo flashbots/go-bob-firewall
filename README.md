@@ -1,11 +1,11 @@
-# go-template
+# go-bob-firewall
 
-[![Goreport status](https://goreportcard.com/badge/github.com/flashbots/go-template)](https://goreportcard.com/report/github.com/flashbots/go-template)
-[![Test status](https://github.com/flashbots/go-template/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/flashbots/go-template/actions?query=workflow%3A%22Checks%22)
+[![Goreport status](https://goreportcard.com/badge/github.com/flashbots/go-bob-firewall)](https://goreportcard.com/report/github.com/flashbots/go-bob-firewall)
+[![Test status](https://github.com/flashbots/go-bob-firewall/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/flashbots/go-bob-firewall/actions?query=workflow%3A%22Checks%22)
 
 Toolbox and building blocks for new Go projects, to get started quickly and right-footed!
 
-* [`Makefile`](https://github.com/flashbots/go-template/blob/main/Makefile) with `lint`, `test`, `build`, `fmt` and more
+* [`Makefile`](https://github.com/flashbots/go-bob-firewall/blob/main/Makefile) with `lint`, `test`, `build`, `fmt` and more
 * Linting with `gofmt`, `gofumpt`, `go vet`, `staticcheck` and `golangci-lint`
 * Logging setup using the [slog logger](https://pkg.go.dev/golang.org/x/exp/slog) (with debug and json logging options)
 * [GitHub Workflows](.github/workflows/) for linting and testing, as well as releasing and publishing Docker images
